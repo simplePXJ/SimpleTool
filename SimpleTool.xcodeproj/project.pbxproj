@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C937445C1F8C955300F01614 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C937445B1F8C955300F01614 /* AppDelegate.m */; };
-		C937445F1F8C955300F01614 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C937445E1F8C955300F01614 /* ViewController.m */; };
-		C93744621F8C955300F01614 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C93744601F8C955300F01614 /* Main.storyboard */; };
-		C93744641F8C955300F01614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C93744631F8C955300F01614 /* Assets.xcassets */; };
-		C93744671F8C955300F01614 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C93744651F8C955300F01614 /* LaunchScreen.storyboard */; };
-		C937446A1F8C955300F01614 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C93744691F8C955300F01614 /* main.m */; };
+		C904A5281F8F01BE00A878EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C93744991F8CBF8300F01614 /* main.m */; };
+		C904A5291F8F01CE00A878EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C937448E1F8C960600F01614 /* AppDelegate.m */; };
+		C904A52E1F8F04B100A878EE /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C904A52D1F8F04B100A878EE /* MainTabBarController.m */; };
+		C904A5321F8F067A00A878EE /* AppDelegate+AppSevice.m in Sources */ = {isa = PBXBuildFile; fileRef = C904A5311F8F067A00A878EE /* AppDelegate+AppSevice.m */; };
+		C904A5331F8F096800A878EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C93744931F8CBF8300F01614 /* Assets.xcassets */; };
+		C904A54C1F8F132A00A878EE /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C904A54B1F8F132A00A878EE /* HomeViewController.m */; };
+		C904A54F1F8F134200A878EE /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C904A54E1F8F134200A878EE /* MessageViewController.m */; };
+		C904A5521F8F136C00A878EE /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C904A5511F8F136C00A878EE /* MineViewController.m */; };
 		C93744741F8C955400F01614 /* SimpleToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C93744731F8C955400F01614 /* SimpleToolTests.m */; };
 		C937447F1F8C955400F01614 /* SimpleToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C937447E1F8C955400F01614 /* SimpleToolUITests.m */; };
+		D44F7617B47B9541FC032511 /* libPods-SimpleTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F550A440F19821F749C446E3 /* libPods-SimpleTool.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,22 +38,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1225DE9B1B7BDFEBB61EE760 /* Pods-SimpleTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTool/Pods-SimpleTool.release.xcconfig"; sourceTree = "<group>"; };
+		8A686C3070A0B7A9316445FB /* Pods-SimpleTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTool/Pods-SimpleTool.debug.xcconfig"; sourceTree = "<group>"; };
+		C904A51A1F8DF4C100A878EE /* UtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
+		C904A52C1F8F04B100A878EE /* MainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		C904A52D1F8F04B100A878EE /* MainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		C904A5301F8F067A00A878EE /* AppDelegate+AppSevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+AppSevice.h"; sourceTree = "<group>"; };
+		C904A5311F8F067A00A878EE /* AppDelegate+AppSevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+AppSevice.m"; sourceTree = "<group>"; };
+		C904A54A1F8F132A00A878EE /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		C904A54B1F8F132A00A878EE /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		C904A54D1F8F134200A878EE /* MessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		C904A54E1F8F134200A878EE /* MessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		C904A5501F8F136C00A878EE /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		C904A5511F8F136C00A878EE /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		C93744571F8C955300F01614 /* SimpleTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C937445A1F8C955300F01614 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C937445B1F8C955300F01614 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C937445D1F8C955300F01614 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C937445E1F8C955300F01614 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C93744611F8C955300F01614 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C93744631F8C955300F01614 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C93744661F8C955300F01614 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C93744681F8C955300F01614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C93744691F8C955300F01614 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C937446F1F8C955400F01614 /* SimpleToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93744731F8C955400F01614 /* SimpleToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleToolTests.m; sourceTree = "<group>"; };
 		C93744751F8C955400F01614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C937447A1F8C955400F01614 /* SimpleToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C937447E1F8C955400F01614 /* SimpleToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleToolUITests.m; sourceTree = "<group>"; };
 		C93744801F8C955400F01614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C937448D1F8C960600F01614 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C937448E1F8C960600F01614 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C93744931F8CBF8300F01614 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C93744981F8CBF8300F01614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C93744991F8CBF8300F01614 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C937449A1F8CC55B00F01614 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F550A440F19821F749C446E3 /* libPods-SimpleTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D44F7617B47B9541FC032511 /* libPods-SimpleTool.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +93,154 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		667E1D052903A46CB6DEB3BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A686C3070A0B7A9316445FB /* Pods-SimpleTool.debug.xcconfig */,
+				1225DE9B1B7BDFEBB61EE760 /* Pods-SimpleTool.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C904A52B1F8F047F00A878EE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C904A52C1F8F04B100A878EE /* MainTabBarController.h */,
+				C904A52D1F8F04B100A878EE /* MainTabBarController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C904A53A1F8F122B00A878EE /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				C904A53B1F8F122B00A878EE /* Controller */,
+				C904A53D1F8F122B00A878EE /* Model */,
+				C904A53E1F8F122B00A878EE /* View */,
+				C904A53C1F8F122B00A878EE /* Logic */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		C904A53B1F8F122B00A878EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C904A5501F8F136C00A878EE /* MineViewController.h */,
+				C904A5511F8F136C00A878EE /* MineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C904A53C1F8F122B00A878EE /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		C904A53D1F8F122B00A878EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C904A53E1F8F122B00A878EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C904A53F1F8F122B00A878EE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C904A5401F8F122B00A878EE /* Controller */,
+				C904A5421F8F122B00A878EE /* Model */,
+				C904A5431F8F122B00A878EE /* View */,
+				C904A5411F8F122B00A878EE /* Logic */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C904A5401F8F122B00A878EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C904A54A1F8F132A00A878EE /* HomeViewController.h */,
+				C904A54B1F8F132A00A878EE /* HomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C904A5411F8F122B00A878EE /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		C904A5421F8F122B00A878EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C904A5431F8F122B00A878EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C904A5441F8F122B00A878EE /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				C904A5451F8F122B00A878EE /* Controller */,
+				C904A5471F8F122B00A878EE /* Model */,
+				C904A5481F8F122B00A878EE /* View */,
+				C904A5461F8F122B00A878EE /* Logic */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		C904A5451F8F122B00A878EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C904A54D1F8F134200A878EE /* MessageViewController.h */,
+				C904A54E1F8F134200A878EE /* MessageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C904A5461F8F122B00A878EE /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		C904A5471F8F122B00A878EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C904A5481F8F122B00A878EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C904A5491F8F130200A878EE /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		C937444E1F8C955300F01614 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +248,8 @@
 				C93744721F8C955400F01614 /* SimpleToolTests */,
 				C937447D1F8C955400F01614 /* SimpleToolUITests */,
 				C93744581F8C955300F01614 /* Products */,
+				667E1D052903A46CB6DEB3BC /* Pods */,
+				F3749731049B63661D28ADC9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +266,12 @@
 		C93744591F8C955300F01614 /* SimpleTool */ = {
 			isa = PBXGroup;
 			children = (
-				C937445A1F8C955300F01614 /* AppDelegate.h */,
-				C937445B1F8C955300F01614 /* AppDelegate.m */,
-				C937445D1F8C955300F01614 /* ViewController.h */,
-				C937445E1F8C955300F01614 /* ViewController.m */,
-				C93744601F8C955300F01614 /* Main.storyboard */,
-				C93744631F8C955300F01614 /* Assets.xcassets */,
-				C93744651F8C955300F01614 /* LaunchScreen.storyboard */,
-				C93744681F8C955300F01614 /* Info.plist */,
-				C93744691F8C955300F01614 /* main.m */,
+				C937448C1F8C960600F01614 /* AppDelegate */,
+				C904A52B1F8F047F00A878EE /* Base */,
+				C937448F1F8C960F00F01614 /* Module */,
+				C937449B1F8CC62700F01614 /* Define */,
+				C904A5491F8F130200A878EE /* Manager */,
+				C93744921F8CBF8300F01614 /* Supporting Files */,
 			);
 			path = SimpleTool;
 			sourceTree = "<group>";
@@ -132,6 +294,54 @@
 			path = SimpleToolUITests;
 			sourceTree = "<group>";
 		};
+		C937448C1F8C960600F01614 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C937448D1F8C960600F01614 /* AppDelegate.h */,
+				C937448E1F8C960600F01614 /* AppDelegate.m */,
+				C904A5301F8F067A00A878EE /* AppDelegate+AppSevice.h */,
+				C904A5311F8F067A00A878EE /* AppDelegate+AppSevice.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		C937448F1F8C960F00F01614 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				C904A53F1F8F122B00A878EE /* Home */,
+				C904A5441F8F122B00A878EE /* Message */,
+				C904A53A1F8F122B00A878EE /* Mine */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		C93744921F8CBF8300F01614 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C93744931F8CBF8300F01614 /* Assets.xcassets */,
+				C93744981F8CBF8300F01614 /* Info.plist */,
+				C93744991F8CBF8300F01614 /* main.m */,
+				C937449A1F8CC55B00F01614 /* PrefixHeader.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C937449B1F8CC62700F01614 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				C904A51A1F8DF4C100A878EE /* UtilsMacros.h */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		F3749731049B63661D28ADC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F550A440F19821F749C446E3 /* libPods-SimpleTool.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +349,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C93744831F8C955400F01614 /* Build configuration list for PBXNativeTarget "SimpleTool" */;
 			buildPhases = (
+				783C308CC1BBDAC9B6247BEE /* 📦 Check Pods Manifest.lock */,
 				C93744531F8C955300F01614 /* Sources */,
 				C93744541F8C955300F01614 /* Frameworks */,
 				C93744551F8C955300F01614 /* Resources */,
+				04B2E5B6C08ED82829BF5AA6 /* 📦 Embed Pods Frameworks */,
+				B2D257CB21D40BCBE596CA28 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,9 +451,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C93744671F8C955300F01614 /* LaunchScreen.storyboard in Resources */,
-				C93744641F8C955300F01614 /* Assets.xcassets in Resources */,
-				C93744621F8C955300F01614 /* Main.storyboard in Resources */,
+				C904A5331F8F096800A878EE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,14 +471,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04B2E5B6C08ED82829BF5AA6 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleTool/Pods-SimpleTool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		783C308CC1BBDAC9B6247BEE /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B2D257CB21D40BCBE596CA28 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleTool/Pods-SimpleTool-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C93744531F8C955300F01614 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C937445F1F8C955300F01614 /* ViewController.m in Sources */,
-				C937446A1F8C955300F01614 /* main.m in Sources */,
-				C937445C1F8C955300F01614 /* AppDelegate.m in Sources */,
+				C904A54F1F8F134200A878EE /* MessageViewController.m in Sources */,
+				C904A5521F8F136C00A878EE /* MineViewController.m in Sources */,
+				C904A52E1F8F04B100A878EE /* MainTabBarController.m in Sources */,
+				C904A5291F8F01CE00A878EE /* AppDelegate.m in Sources */,
+				C904A5281F8F01BE00A878EE /* main.m in Sources */,
+				C904A54C1F8F132A00A878EE /* HomeViewController.m in Sources */,
+				C904A5321F8F067A00A878EE /* AppDelegate+AppSevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,25 +564,6 @@
 			targetProxy = C937447B1F8C955400F01614 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		C93744601F8C955300F01614 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C93744611F8C955300F01614 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C93744651F8C955300F01614 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C93744661F8C955300F01614 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C93744811F8C955400F01614 /* Debug */ = {
@@ -428,29 +672,39 @@
 		};
 		C93744841F8C955400F01614 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A686C3070A0B7A9316445FB /* Pods-SimpleTool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CHEK3X4873;
-				INFOPLIST_FILE = SimpleTool/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/PXJ/Desktop/SimpleTool/SimpleTool/Supporting Files/PrefixHeader.pch";
+				INFOPLIST_FILE = "/Users/PXJ/Desktop/SimpleTool/SimpleTool/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.simple.SimpleTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C93744851F8C955400F01614 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1225DE9B1B7BDFEBB61EE760 /* Pods-SimpleTool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CHEK3X4873;
-				INFOPLIST_FILE = SimpleTool/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/PXJ/Desktop/SimpleTool/SimpleTool/Supporting Files/PrefixHeader.pch";
+				INFOPLIST_FILE = "/Users/PXJ/Desktop/SimpleTool/SimpleTool/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.simple.SimpleTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
