@@ -9,7 +9,9 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate (AppSevice)
-
+/**
+ 初始化窗口
+ */
 - (void)initWindow;
 
 +(instancetype)sharedAppDelegate;

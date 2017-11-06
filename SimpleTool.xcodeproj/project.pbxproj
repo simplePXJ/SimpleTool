@@ -15,8 +15,13 @@
 		C904A54C1F8F132A00A878EE /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C904A54B1F8F132A00A878EE /* HomeViewController.m */; };
 		C904A54F1F8F134200A878EE /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C904A54E1F8F134200A878EE /* MessageViewController.m */; };
 		C904A5521F8F136C00A878EE /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C904A5511F8F136C00A878EE /* MineViewController.m */; };
+		C934F9531F90B3C100275D4B /* ColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C934F9521F90B3C100275D4B /* ColorManager.m */; };
+		C9357E3B1F94476C009BE840 /* MessageTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9357E3A1F94476C009BE840 /* MessageTableView.m */; };
+		C9357E3E1F944E54009BE840 /* MessageHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9357E3D1F944E54009BE840 /* MessageHeaderView.m */; };
+		C9357E411F944E7F009BE840 /* NavView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9357E401F944E7F009BE840 /* NavView.m */; };
 		C93744741F8C955400F01614 /* SimpleToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C93744731F8C955400F01614 /* SimpleToolTests.m */; };
 		C937447F1F8C955400F01614 /* SimpleToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C937447E1F8C955400F01614 /* SimpleToolUITests.m */; };
+		C966FD5E1FB02A03004BDA8B /* FontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C966FD5D1FB02A03004BDA8B /* FontManager.m */; };
 		D44F7617B47B9541FC032511 /* libPods-SimpleTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F550A440F19821F749C446E3 /* libPods-SimpleTool.a */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +56,14 @@
 		C904A54E1F8F134200A878EE /* MessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
 		C904A5501F8F136C00A878EE /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		C904A5511F8F136C00A878EE /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		C934F9511F90B3C100275D4B /* ColorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorManager.h; sourceTree = "<group>"; };
+		C934F9521F90B3C100275D4B /* ColorManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorManager.m; sourceTree = "<group>"; };
+		C9357E391F94476C009BE840 /* MessageTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageTableView.h; sourceTree = "<group>"; };
+		C9357E3A1F94476C009BE840 /* MessageTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageTableView.m; sourceTree = "<group>"; };
+		C9357E3C1F944E54009BE840 /* MessageHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageHeaderView.h; sourceTree = "<group>"; };
+		C9357E3D1F944E54009BE840 /* MessageHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageHeaderView.m; sourceTree = "<group>"; };
+		C9357E3F1F944E7F009BE840 /* NavView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavView.h; sourceTree = "<group>"; };
+		C9357E401F944E7F009BE840 /* NavView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavView.m; sourceTree = "<group>"; };
 		C93744571F8C955300F01614 /* SimpleTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C937446F1F8C955400F01614 /* SimpleToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93744731F8C955400F01614 /* SimpleToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleToolTests.m; sourceTree = "<group>"; };
@@ -64,6 +77,8 @@
 		C93744981F8CBF8300F01614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C93744991F8CBF8300F01614 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C937449A1F8CC55B00F01614 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C966FD5C1FB02A03004BDA8B /* FontManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontManager.h; sourceTree = "<group>"; };
+		C966FD5D1FB02A03004BDA8B /* FontManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontManager.m; sourceTree = "<group>"; };
 		F550A440F19821F749C446E3 /* libPods-SimpleTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -107,6 +122,8 @@
 			children = (
 				C904A52C1F8F04B100A878EE /* MainTabBarController.h */,
 				C904A52D1F8F04B100A878EE /* MainTabBarController.m */,
+				C9357E3F1F944E7F009BE840 /* NavView.h */,
+				C9357E401F944E7F009BE840 /* NavView.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -230,6 +247,10 @@
 		C904A5481F8F122B00A878EE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C9357E391F94476C009BE840 /* MessageTableView.h */,
+				C9357E3A1F94476C009BE840 /* MessageTableView.m */,
+				C9357E3C1F944E54009BE840 /* MessageHeaderView.h */,
+				C9357E3D1F944E54009BE840 /* MessageHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -237,6 +258,10 @@
 		C904A5491F8F130200A878EE /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				C934F9511F90B3C100275D4B /* ColorManager.h */,
+				C934F9521F90B3C100275D4B /* ColorManager.m */,
+				C966FD5C1FB02A03004BDA8B /* FontManager.h */,
+				C966FD5D1FB02A03004BDA8B /* FontManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -525,8 +550,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C904A54F1F8F134200A878EE /* MessageViewController.m in Sources */,
+				C9357E3B1F94476C009BE840 /* MessageTableView.m in Sources */,
+				C966FD5E1FB02A03004BDA8B /* FontManager.m in Sources */,
 				C904A5521F8F136C00A878EE /* MineViewController.m in Sources */,
 				C904A52E1F8F04B100A878EE /* MainTabBarController.m in Sources */,
+				C934F9531F90B3C100275D4B /* ColorManager.m in Sources */,
+				C9357E3E1F944E54009BE840 /* MessageHeaderView.m in Sources */,
+				C9357E411F944E7F009BE840 /* NavView.m in Sources */,
 				C904A5291F8F01CE00A878EE /* AppDelegate.m in Sources */,
 				C904A5281F8F01BE00A878EE /* main.m in Sources */,
 				C904A54C1F8F132A00A878EE /* HomeViewController.m in Sources */,

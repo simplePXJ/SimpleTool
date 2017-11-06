@@ -17,6 +17,10 @@
 }
 
 #pragma mark ------初始化窗口------
+
+/**
+ 初始化窗口
+ */
 - (void)initWindow
 {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
