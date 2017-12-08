@@ -19,14 +19,21 @@
     // Drawing code
 }
 */
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        self.frame = CGRectMake(0, 0, KScreenWidth, KNavBarHeight);
+        [self initUI];
+    }
+    return self;
+}
 - (id)initWithFrame:(CGRect)frame;
 {
     
     self = [super initWithFrame:frame];
     if (self) {
-        
         [self initUI];
-        
     }
     return self;
 }
@@ -34,12 +41,9 @@
 - (void)initUI
 {
     self.clipsToBounds = YES;
-    self.backView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, KScreenWidth, 64)];
-    [self addSubview:self.backView];
-    
-    
-    
-    self.titleLab   = [[UILabel alloc] initWithFrame:CGRectMake(50, 20, KScreenWidth-100, 44)];
+    self.frame = CGRectMake(0, 0, KScreenWidth, KNavHeight);
+    self.backgroundColor = KColor.navBarBack;
+    self.titleLab   = [[UILabel alloc] initWithFrame:CGRectMake(50, KStatusBarHeight, KScreenWidth-100, KNavBarHeight)];
     self.titleLab.textColor = KColor.navTitleText;
     self.titleLab.font      = KFont.navTitleText;
     self.titleLab.textAlignment = NSTextAlignmentCenter;
@@ -73,8 +77,11 @@
     self.rightControl.frame = CGRectMake(KScreenWidth-84, 20, 84, 44);
     [self.rightControl.titleLabel setFont:KFont.textM];
     [self addSubview:self.rightControl];
+    NSDate * nowDate = [SPDateManager sharedInstance].nowDate;
+    NSLog(@"%@",nowDate);
     
-    
+    NSDateFormatter * formatter = [SPDateManager sharedInstance].dateFormatter;
+    [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     
 }
 -(void)hiddenleft;

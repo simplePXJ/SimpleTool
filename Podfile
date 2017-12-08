@@ -9,6 +9,7 @@ targetsArray.each do |t|
         pod 'SDWebImage', '~> 4.1.0'
         pod 'AFNetworking', '~> 3.1.0'
         pod 'MBProgressHUD', '~> 1.0.0'
+        pod 'MD5Digest', '~> 0.1.0'
         pod 'UMengUShare/UI'
         pod 'UMengUShare/Social/ReducedWeChat'
         pod 'UMengUShare/Social/ReducedQQ'

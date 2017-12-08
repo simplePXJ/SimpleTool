@@ -28,13 +28,16 @@
     self.tabbarBack   = RGBCOLOR(230, 230, 230);
     self.seperateLine = RGBCOLOR(200, 200, 200);
     self.view_main    = RGBCOLOR(212, 69, 13);
-    self.view_main_2  = RGBCOLOR(213, 154, 154);
+    self.view_main_2  = RGBCOLOR(211, 124, 124);
     self.navTitleText = RGBCOLOR(255, 255, 255);
     self.Text_main    = RGBCOLOR(38, 37, 42);
     self.Text_main_2  = RGBCOLOR(110, 110, 110);
+    self.candleView   = RGBCOLOR(253, 253, 253);
+    self.candleRed    = RGBCOLOR(250, 130, 130);
+    self.candleGreen  = RGBCOLOR(130, 250, 130);
 }
 - (void)changeColorWithStyle:(NSInteger)colorStyle
 {
-
+    
 }
 @end

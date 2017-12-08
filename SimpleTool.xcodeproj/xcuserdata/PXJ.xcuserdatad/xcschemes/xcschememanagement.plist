@@ -7,7 +7,25 @@
 		<key>SimpleTool.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>C93744561F8C955300F01614</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C937446E1F8C955400F01614</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C93744791F8C955400F01614</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

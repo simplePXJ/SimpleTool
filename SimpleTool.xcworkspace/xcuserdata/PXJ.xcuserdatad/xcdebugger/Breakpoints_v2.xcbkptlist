@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SimpleTool/Module/Message/View/MessageTableView.m"
-            timestampString = "531642233.302381"
+            filePath = "SimpleTool/Module/Home/Model/SKLine_DataManager.m"
+            timestampString = "534419543.09063"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "-scrollViewDidScroll:"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "-dataComplete"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

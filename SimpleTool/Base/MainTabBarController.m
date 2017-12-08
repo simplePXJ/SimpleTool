@@ -17,6 +17,7 @@
     NSArray * _tabbar_select_ImageArray;
     NSArray * _tabbar_ImageArray;
     
+    
 }
 @end
 
@@ -31,12 +32,44 @@
     
 }
 - (void)initData{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(addNewTabarItem) name:@"AddNewTabbarItem" object:nil];
     _tabbar_nameArray = @[@"首页",@"消息",@"我的"];
     _tabbar_select_ImageArray = @[@"tabbar_main_select",@"tabbar_message_select",@"tabbar_mine_select"];
     _tabbar_ImageArray = @[@"tabbar_main",@"tabbar_message",@"tabbar_mine"];
 }
+- (void)addNewTabarItem
+{
+    if (self.viewControllers.count<=3) {
+        HomeViewController * homeVC = [[HomeViewController alloc] init];
+        UINavigationController * homeNav = [[UINavigationController alloc] initWithRootViewController:homeVC];
+        homeNav.navigationBarHidden = YES;
+        
+        NSMutableArray  * viewControllers = [NSMutableArray arrayWithArray:self.viewControllers];
+        [viewControllers insertObject:homeNav atIndex:2];
+        self.viewControllers = viewControllers;
+        
+        
+        UITabBarItem * tabbarItem =(UITabBarItem *)[self.tabBar.items objectAtIndex:2];
+        
+        NSString * tabbarName       = _tabbar_nameArray[0];
+        NSString * selectImage      = _tabbar_select_ImageArray[0];
+        NSString * unselectImage    = _tabbar_ImageArray[0];
+        
+        NSDictionary *selectdeAttrubributeDic   = @{NSFontAttributeName: [UIFont systemFontOfSize:11.0f],
+                                                    NSForegroundColorAttributeName:[UIColor redColor]};
+        NSDictionary *unSelectedAttrubributeDic = @{NSFontAttributeName: [UIFont systemFontOfSize:11.0f],
+                                                    NSForegroundColorAttributeName:[UIColor blackColor]};
+        [tabbarItem setTitle:tabbarName];
+        tabbarItem.image = [IMAGE_NAMED(unselectImage) imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        tabbarItem.selectedImage = [IMAGE_NAMED(selectImage) imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        [tabbarItem setTitleTextAttributes:selectdeAttrubributeDic forState:UIControlStateSelected];
+        [tabbarItem setTitleTextAttributes:unSelectedAttrubributeDic forState:UIControlStateNormal];
+
+    }
+}
 - (void)initTabbarItem
 {
+
     HomeViewController * homeVC = [[HomeViewController alloc] init];
     UINavigationController * homeNav = [[UINavigationController alloc] initWithRootViewController:homeVC];
     homeNav.navigationBarHidden = YES;
@@ -67,7 +100,6 @@
         tabbarItem.selectedImage = [IMAGE_NAMED(selectImage) imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         [tabbarItem setTitleTextAttributes:selectdeAttrubributeDic forState:UIControlStateSelected];
         [tabbarItem setTitleTextAttributes:unSelectedAttrubributeDic forState:UIControlStateNormal];
-
     }
     self.tabBarController.selectedIndex = 0;
     

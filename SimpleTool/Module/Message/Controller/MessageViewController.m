@@ -28,8 +28,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = KColor.backGround;
+    [self initNav];
     [self initUI];
+}
+- (void)initNav{
+    NavView * navView = [[NavView alloc] init];
+    [navView setTitle:@"Message"];
+    [self.view addSubview:navView];
+    
 }
 #pragma mark - ------------UI界面初始化-------------
 - (void)initUI{
@@ -54,10 +61,10 @@
     [self initHorizontalScrollView];
 }
 - (void)initScrollHeaderView{
-    _scrollHeaderView.backgroundColor = [UIColor lightGrayColor];
+    _scrollHeaderView.backgroundColor = KColor.backGround;
     _segmentedControl = [[UISegmentedControl alloc] initWithItems:@[@"系统",@"我的"]];
     _segmentedControl.frame = CGRectMake(0, 0, 200, 30);
-    _segmentedControl.tintColor = [UIColor blackColor];
+    _segmentedControl.tintColor = KColor.navBarBack;
     _segmentedControl.center = CGPointMake(KScreenWidth/2.0, 200-15);
     [_segmentedControl addTarget:self action:@selector(segmentControlChange:) forControlEvents:UIControlEventValueChanged];
     [_scrollHeaderView addSubview:_segmentedControl];
@@ -83,7 +90,6 @@
     };
     _mineMessageTableView.backgroundColor = [UIColor grayColor];
     [_horizontalScrollview addSubview:_mineMessageTableView];
-    
 }
 
 #pragma mark  - ------------click响应方法-------------

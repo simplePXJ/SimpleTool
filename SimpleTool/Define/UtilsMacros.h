@@ -17,10 +17,14 @@
 #define kUserDefaults       [NSUserDefaults standardUserDefaults]
 #define kNotificationCenter [NSNotificationCenter defaultCenter]
 
-#define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
-#define kNavBarHeight 44.0
-#define kTabBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
-#define kTopHeight (kStatusBarHeight + kNavBarHeight)
+
+#define K_IS_IPHONE_X ([UIScreen mainScreen].bounds.size.height >= 812)
+#define KStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+#define KNavHeight (K_IS_IPHONE_X?64+24:64)
+#define KNavBarHeight 44
+#define KTabBarHeight (K_IS_IPHONE_X?49+34:49)
+#define KBottomHeight (K_IS_IPHONE_X?34:0)
+
 
 //获取屏幕宽高
 #define KScreenWidth ([[UIScreen mainScreen] bounds].size.width)
@@ -128,5 +132,6 @@ shared##className = [[self alloc] init]; \
 return shared##className; \
 }
 
+#define WS(__weakself__) __weak __typeof(&*self)__weakself__ = self;
 
 #endif /* UtilsMacros_h */

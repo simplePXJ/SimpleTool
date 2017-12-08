@@ -18,8 +18,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
+    UIButton * btn = [QuickUI newButtonWithFrame:CGRectMake(60, 100, 100, 50) bgColor:KColor.view_main title:@"insetNewItem" titleColor:KColor.navTitleText titleFont:KFont.textM];
+    [self.view addSubview:btn];
+    
+    [btn addTarget:self action:@selector(insertNewItem) forControlEvents:UIControlEventTouchUpInside];
 }
-
+- (void)insertNewItem
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"AddNewTabbarItem" object:nil];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

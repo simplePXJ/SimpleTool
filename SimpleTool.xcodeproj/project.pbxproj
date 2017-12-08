@@ -21,7 +21,24 @@
 		C9357E411F944E7F009BE840 /* NavView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9357E401F944E7F009BE840 /* NavView.m */; };
 		C93744741F8C955400F01614 /* SimpleToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C93744731F8C955400F01614 /* SimpleToolTests.m */; };
 		C937447F1F8C955400F01614 /* SimpleToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C937447E1F8C955400F01614 /* SimpleToolUITests.m */; };
+		C9498DAC1FB97508009AA577 /* AdScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9498DAB1FB97508009AA577 /* AdScrollView.m */; };
+		C9498DAF1FB97B34009AA577 /* AdScrollSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9498DAE1FB97B34009AA577 /* AdScrollSubView.m */; };
+		C96231BB1FD52CEC0092782D /* NetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C96231BA1FD52CEC0092782D /* NetRequest.m */; };
+		C96231BE1FD534B30092782D /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = C96231BC1FD534B30092782D /* Helper.m */; };
+		C96231C51FD53B5F0092782D /* SKLine_DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C96231C41FD53B5F0092782D /* SKLine_DataManager.m */; };
 		C966FD5E1FB02A03004BDA8B /* FontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C966FD5D1FB02A03004BDA8B /* FontManager.m */; };
+		C9C1509C1FCD653900EFCF28 /* QuickUI.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1509B1FCD653800EFCF28 /* QuickUI.m */; };
+		C9C1509F1FCE822A00EFCF28 /* ScrollTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1509E1FCE822A00EFCF28 /* ScrollTextViewController.m */; };
+		C9C150A21FCE85C600EFCF28 /* SPDateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C150A11FCE85C600EFCF28 /* SPDateManager.m */; };
+		C9E20D1B1FD7D73400818ACA /* SKLine_GesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E20D1A1FD7D73400818ACA /* SKLine_GesManager.m */; };
+		C9E20D1F1FD7EA0200818ACA /* SKLine_GesturePan.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E20D1E1FD7EA0200818ACA /* SKLine_GesturePan.m */; };
+		C9E628231FD63E0300A70A18 /* SKLine_Coordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E628221FD63E0300A70A18 /* SKLine_Coordinate.m */; };
+		C9E628261FD673C200A70A18 /* SKLine_DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E628251FD673C200A70A18 /* SKLine_DataModel.m */; };
+		C9E628291FD6744A00A70A18 /* SKLine_DataControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E628281FD6744A00A70A18 /* SKLine_DataControl.m */; };
+		C9E6282C1FD681B100A70A18 /* SKLine_DataNet.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E6282B1FD681B100A70A18 /* SKLine_DataNet.m */; };
+		C9E6282F1FD682D400A70A18 /* SKLine_ChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E6282E1FD682D400A70A18 /* SKLine_ChartView.m */; };
+		C9E628321FD682FC00A70A18 /* SKLine_CandleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E628311FD682FC00A70A18 /* SKLine_CandleView.m */; };
+		C9E628351FD6836E00A70A18 /* SKLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E628341FD6836E00A70A18 /* SKLineViewController.m */; };
 		D44F7617B47B9541FC032511 /* libPods-SimpleTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F550A440F19821F749C446E3 /* libPods-SimpleTool.a */; };
 /* End PBXBuildFile section */
 
@@ -77,8 +94,44 @@
 		C93744981F8CBF8300F01614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C93744991F8CBF8300F01614 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C937449A1F8CC55B00F01614 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C9498DAA1FB97508009AA577 /* AdScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdScrollView.h; sourceTree = "<group>"; };
+		C9498DAB1FB97508009AA577 /* AdScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdScrollView.m; sourceTree = "<group>"; };
+		C9498DAD1FB97B34009AA577 /* AdScrollSubView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdScrollSubView.h; sourceTree = "<group>"; };
+		C9498DAE1FB97B34009AA577 /* AdScrollSubView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdScrollSubView.m; sourceTree = "<group>"; };
+		C96231B91FD52CEC0092782D /* NetRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetRequest.h; sourceTree = "<group>"; };
+		C96231BA1FD52CEC0092782D /* NetRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetRequest.m; sourceTree = "<group>"; };
+		C96231BC1FD534B30092782D /* Helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
+		C96231BD1FD534B30092782D /* Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		C96231BF1FD535B90092782D /* UrlMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UrlMacro.h; sourceTree = "<group>"; };
+		C96231C31FD53B5F0092782D /* SKLine_DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKLine_DataManager.h; sourceTree = "<group>"; };
+		C96231C41FD53B5F0092782D /* SKLine_DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKLine_DataManager.m; sourceTree = "<group>"; };
+		C96231D21FD63BF00092782D /* SKLine_Configer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKLine_Configer.h; sourceTree = "<group>"; };
 		C966FD5C1FB02A03004BDA8B /* FontManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontManager.h; sourceTree = "<group>"; };
 		C966FD5D1FB02A03004BDA8B /* FontManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontManager.m; sourceTree = "<group>"; };
+		C9C1509A1FCD653800EFCF28 /* QuickUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickUI.h; sourceTree = "<group>"; };
+		C9C1509B1FCD653800EFCF28 /* QuickUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickUI.m; sourceTree = "<group>"; };
+		C9C1509D1FCE822A00EFCF28 /* ScrollTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollTextViewController.h; sourceTree = "<group>"; };
+		C9C1509E1FCE822A00EFCF28 /* ScrollTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollTextViewController.m; sourceTree = "<group>"; };
+		C9C150A01FCE85C600EFCF28 /* SPDateManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPDateManager.h; sourceTree = "<group>"; };
+		C9C150A11FCE85C600EFCF28 /* SPDateManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPDateManager.m; sourceTree = "<group>"; };
+		C9E20D191FD7D73400818ACA /* SKLine_GesManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKLine_GesManager.h; sourceTree = "<group>"; };
+		C9E20D1A1FD7D73400818ACA /* SKLine_GesManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKLine_GesManager.m; sourceTree = "<group>"; };
+		C9E20D1D1FD7EA0200818ACA /* SKLine_GesturePan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKLine_GesturePan.h; sourceTree = "<group>"; };
+		C9E20D1E1FD7EA0200818ACA /* SKLine_GesturePan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKLine_GesturePan.m; sourceTree = "<group>"; };
+		C9E628211FD63E0300A70A18 /* SKLine_Coordinate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKLine_Coordinate.h; sourceTree = "<group>"; };
+		C9E628221FD63E0300A70A18 /* SKLine_Coordinate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKLine_Coordinate.m; sourceTree = "<group>"; };
+		C9E628241FD673C200A70A18 /* SKLine_DataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKLine_DataModel.h; sourceTree = "<group>"; };
+		C9E628251FD673C200A70A18 /* SKLine_DataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKLine_DataModel.m; sourceTree = "<group>"; };
+		C9E628271FD6744A00A70A18 /* SKLine_DataControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKLine_DataControl.h; sourceTree = "<group>"; };
+		C9E628281FD6744A00A70A18 /* SKLine_DataControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKLine_DataControl.m; sourceTree = "<group>"; };
+		C9E6282A1FD681B100A70A18 /* SKLine_DataNet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKLine_DataNet.h; sourceTree = "<group>"; };
+		C9E6282B1FD681B100A70A18 /* SKLine_DataNet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKLine_DataNet.m; sourceTree = "<group>"; };
+		C9E6282D1FD682D400A70A18 /* SKLine_ChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKLine_ChartView.h; sourceTree = "<group>"; };
+		C9E6282E1FD682D400A70A18 /* SKLine_ChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKLine_ChartView.m; sourceTree = "<group>"; };
+		C9E628301FD682FC00A70A18 /* SKLine_CandleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKLine_CandleView.h; sourceTree = "<group>"; };
+		C9E628311FD682FC00A70A18 /* SKLine_CandleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKLine_CandleView.m; sourceTree = "<group>"; };
+		C9E628331FD6836E00A70A18 /* SKLineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKLineViewController.h; sourceTree = "<group>"; };
+		C9E628341FD6836E00A70A18 /* SKLineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKLineViewController.m; sourceTree = "<group>"; };
 		F550A440F19821F749C446E3 /* libPods-SimpleTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -124,6 +177,12 @@
 				C904A52D1F8F04B100A878EE /* MainTabBarController.m */,
 				C9357E3F1F944E7F009BE840 /* NavView.h */,
 				C9357E401F944E7F009BE840 /* NavView.m */,
+				C9498DAA1FB97508009AA577 /* AdScrollView.h */,
+				C9498DAB1FB97508009AA577 /* AdScrollView.m */,
+				C9498DAD1FB97B34009AA577 /* AdScrollSubView.h */,
+				C9498DAE1FB97B34009AA577 /* AdScrollSubView.m */,
+				C9C1509A1FCD653800EFCF28 /* QuickUI.h */,
+				C9C1509B1FCD653800EFCF28 /* QuickUI.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -185,6 +244,10 @@
 			children = (
 				C904A54A1F8F132A00A878EE /* HomeViewController.h */,
 				C904A54B1F8F132A00A878EE /* HomeViewController.m */,
+				C9E628331FD6836E00A70A18 /* SKLineViewController.h */,
+				C9E628341FD6836E00A70A18 /* SKLineViewController.m */,
+				C9C1509D1FCE822A00EFCF28 /* ScrollTextViewController.h */,
+				C9C1509E1FCE822A00EFCF28 /* ScrollTextViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -199,6 +262,20 @@
 		C904A5421F8F122B00A878EE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C9E20D1C1FD7E9E100818ACA /* Gesture */,
+				C96231D21FD63BF00092782D /* SKLine_Configer.h */,
+				C9E628271FD6744A00A70A18 /* SKLine_DataControl.h */,
+				C9E628281FD6744A00A70A18 /* SKLine_DataControl.m */,
+				C96231C31FD53B5F0092782D /* SKLine_DataManager.h */,
+				C96231C41FD53B5F0092782D /* SKLine_DataManager.m */,
+				C9E20D191FD7D73400818ACA /* SKLine_GesManager.h */,
+				C9E20D1A1FD7D73400818ACA /* SKLine_GesManager.m */,
+				C9E628241FD673C200A70A18 /* SKLine_DataModel.h */,
+				C9E628251FD673C200A70A18 /* SKLine_DataModel.m */,
+				C9E628211FD63E0300A70A18 /* SKLine_Coordinate.h */,
+				C9E628221FD63E0300A70A18 /* SKLine_Coordinate.m */,
+				C9E6282A1FD681B100A70A18 /* SKLine_DataNet.h */,
+				C9E6282B1FD681B100A70A18 /* SKLine_DataNet.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -206,6 +283,10 @@
 		C904A5431F8F122B00A878EE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C9E6282D1FD682D400A70A18 /* SKLine_ChartView.h */,
+				C9E6282E1FD682D400A70A18 /* SKLine_ChartView.m */,
+				C9E628301FD682FC00A70A18 /* SKLine_CandleView.h */,
+				C9E628311FD682FC00A70A18 /* SKLine_CandleView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -258,10 +339,16 @@
 		C904A5491F8F130200A878EE /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				C96231BD1FD534B30092782D /* Helper.h */,
+				C96231BC1FD534B30092782D /* Helper.m */,
 				C934F9511F90B3C100275D4B /* ColorManager.h */,
 				C934F9521F90B3C100275D4B /* ColorManager.m */,
 				C966FD5C1FB02A03004BDA8B /* FontManager.h */,
 				C966FD5D1FB02A03004BDA8B /* FontManager.m */,
+				C9C150A01FCE85C600EFCF28 /* SPDateManager.h */,
+				C9C150A11FCE85C600EFCF28 /* SPDateManager.m */,
+				C96231B91FD52CEC0092782D /* NetRequest.h */,
+				C96231BA1FD52CEC0092782D /* NetRequest.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -355,8 +442,18 @@
 			isa = PBXGroup;
 			children = (
 				C904A51A1F8DF4C100A878EE /* UtilsMacros.h */,
+				C96231BF1FD535B90092782D /* UrlMacro.h */,
 			);
 			path = Define;
+			sourceTree = "<group>";
+		};
+		C9E20D1C1FD7E9E100818ACA /* Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				C9E20D1D1FD7EA0200818ACA /* SKLine_GesturePan.h */,
+				C9E20D1E1FD7EA0200818ACA /* SKLine_GesturePan.m */,
+			);
+			path = Gesture;
 			sourceTree = "<group>";
 		};
 		F3749731049B63661D28ADC9 /* Frameworks */ = {
@@ -549,17 +646,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9C1509C1FCD653900EFCF28 /* QuickUI.m in Sources */,
+				C96231BB1FD52CEC0092782D /* NetRequest.m in Sources */,
 				C904A54F1F8F134200A878EE /* MessageViewController.m in Sources */,
 				C9357E3B1F94476C009BE840 /* MessageTableView.m in Sources */,
 				C966FD5E1FB02A03004BDA8B /* FontManager.m in Sources */,
 				C904A5521F8F136C00A878EE /* MineViewController.m in Sources */,
 				C904A52E1F8F04B100A878EE /* MainTabBarController.m in Sources */,
+				C9E6282F1FD682D400A70A18 /* SKLine_ChartView.m in Sources */,
 				C934F9531F90B3C100275D4B /* ColorManager.m in Sources */,
+				C9E628351FD6836E00A70A18 /* SKLineViewController.m in Sources */,
+				C9C150A21FCE85C600EFCF28 /* SPDateManager.m in Sources */,
+				C9E20D1F1FD7EA0200818ACA /* SKLine_GesturePan.m in Sources */,
+				C96231BE1FD534B30092782D /* Helper.m in Sources */,
+				C9498DAC1FB97508009AA577 /* AdScrollView.m in Sources */,
+				C9C1509F1FCE822A00EFCF28 /* ScrollTextViewController.m in Sources */,
+				C9E628321FD682FC00A70A18 /* SKLine_CandleView.m in Sources */,
 				C9357E3E1F944E54009BE840 /* MessageHeaderView.m in Sources */,
+				C9498DAF1FB97B34009AA577 /* AdScrollSubView.m in Sources */,
+				C9E6282C1FD681B100A70A18 /* SKLine_DataNet.m in Sources */,
+				C9E628291FD6744A00A70A18 /* SKLine_DataControl.m in Sources */,
+				C9E628261FD673C200A70A18 /* SKLine_DataModel.m in Sources */,
 				C9357E411F944E7F009BE840 /* NavView.m in Sources */,
+				C9E20D1B1FD7D73400818ACA /* SKLine_GesManager.m in Sources */,
+				C96231C51FD53B5F0092782D /* SKLine_DataManager.m in Sources */,
 				C904A5291F8F01CE00A878EE /* AppDelegate.m in Sources */,
 				C904A5281F8F01BE00A878EE /* main.m in Sources */,
 				C904A54C1F8F132A00A878EE /* HomeViewController.m in Sources */,
+				C9E628231FD63E0300A70A18 /* SKLine_Coordinate.m in Sources */,
 				C904A5321F8F067A00A878EE /* AppDelegate+AppSevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -706,8 +820,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CHEK3X4873;
+				DEVELOPMENT_TEAM = N9D4SCWKR3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/PXJ/Desktop/SimpleTool/SimpleTool/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "/Users/PXJ/Desktop/SimpleTool/SimpleTool/Supporting Files/Info.plist";
@@ -715,6 +830,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.simple.SimpleTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -725,8 +841,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CHEK3X4873;
+				DEVELOPMENT_TEAM = N9D4SCWKR3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/PXJ/Desktop/SimpleTool/SimpleTool/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "/Users/PXJ/Desktop/SimpleTool/SimpleTool/Supporting Files/Info.plist";
@@ -734,6 +851,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.simple.SimpleTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

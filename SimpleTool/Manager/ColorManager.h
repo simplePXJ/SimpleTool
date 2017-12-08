@@ -33,6 +33,12 @@
 @property (nonatomic,strong)UIColor * Text_main_2;
 
 
+@property (nonatomic,strong)UIColor * candleView;
+@property (nonatomic,strong)UIColor * candleRed;
+@property (nonatomic,strong)UIColor * candleGreen;
+
+
+
 +(ColorManager*)sharedColor;
 
 @end
