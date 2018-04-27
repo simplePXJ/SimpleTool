@@ -17,9 +17,11 @@ PODS:
   - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
   - MD5Digest (0.1.0)
+  - Protobuf (3.1.0)
   - SDWebImage (4.1.0):
     - SDWebImage/Core (= 4.1.0)
   - SDWebImage/Core (4.1.0)
+  - SocketRocket (0.5.1)
   - UMengUShare/Core (6.4.5):
     - UMengUShare/Network
   - UMengUShare/Network (6.4.5)
@@ -37,7 +39,9 @@ DEPENDENCIES:
   - Masonry (~> 1.0.2)
   - MBProgressHUD (~> 1.0.0)
   - MD5Digest (~> 0.1.0)
+  - Protobuf (~> 3.1.0)
   - SDWebImage (~> 4.1.0)
+  - SocketRocket
   - UMengUShare/Social/ReducedQQ
   - UMengUShare/Social/ReducedSina
   - UMengUShare/Social/ReducedWeChat
@@ -48,9 +52,11 @@ SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MD5Digest: 99bcccfc389c5b7a0edaf66beb80fbc7596a3b65
+  Protobuf: 265e9977d04a83eba9cefb0bed3ad07e41033b4a
   SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   UMengUShare: a5711c54e640b04e3048e931d2b88d50f9cfa55c
 
-PODFILE CHECKSUM: eb0c22d90ee823c81ad414e6a0951cbb2c5771c2
+PODFILE CHECKSUM: 226be31c020f655ceac6692e8879ccf270b24b68
 
 COCOAPODS: 1.0.0

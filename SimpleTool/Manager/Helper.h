@@ -17,9 +17,6 @@
 
 + (UIImage *)imageFromColor:(UIColor *)color;
 
-
-+ (NSString *)addHttp:(NSString *)urlStr;
-
 + (NSMutableDictionary *)getParams:(NSString *)aParamsStr;
 
 /**- InterpolatedUIImage=因为生成的二维码是一个CIImage，我们直接转换成UIImage的话大小不好控制，所以使用下面方法返回需要大小的UIImage*/

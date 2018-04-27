@@ -17,10 +17,11 @@ typedef void(^ClickBlock)(int);
 @property (nonatomic,strong)UIButton * leftControl;
 @property (nonatomic,strong)UIButton * rightControl;
 @property (nonatomic,strong)UILabel * titleLab;
-@property (nonatomic,strong)UIView * superVC;
+@property (nonatomic,strong)UIView * SPSuperView;
 @property (nonatomic,strong)UILabel * rightLab;
 
-- (id)initWithFrame:(CGRect)frame;
+- (id)initWithSupView:(UIView*)supView;
+- (void)loadUI;
 -(void)setTitle:(NSString *)title;
 -(void)hiddenleft;
 

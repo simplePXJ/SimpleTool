@@ -54,6 +54,7 @@
 }
 
 - (void)panTrigger:(float)moveX{
+    NSLog(@"recorePanindex________________%d",recordPanIndex);
     CGFloat candleWidth = CGRectGetWidth(_candleView.frame)/Control_Get_DefaultShowCandleNum;
     NSInteger moveCount = fabs(moveX)/candleWidth;
     if (moveX>0) {
@@ -73,13 +74,15 @@
                 maxForCount = recordPanIndex+ Control_Get_DefaultShowCandleNum;
             }
             for (NSInteger i = recordPanIndex; i<maxForCount; i++) {
-                [_datamanager.currentQueenElementArray addObject:_datamanager.allDataArray[i]];
+                [_datamanager. currentQueenElementArray addObject:_datamanager.allDataArray[i]];
             }
         }
         [self.delegate panGesWithMove];
     }
     
     if (recordPanIndex <= 50 && loadMoreLocked == NO) {
+        NSLog(@"recordPanIndex%d",(int)recordPanIndex);
+
         loadMoreLocked = YES;
         [_datamanager getKLineBeforeDataSelector];
         [self performSelector:@selector(unLockLoadMore) withObject:nil afterDelay:1];

@@ -22,7 +22,7 @@
     return self;
 }
 - (void)dataConfiger{
-    self.dataNet = [[SKLine_DataNet alloc] init];
+    self.dataNet = [SKLine_DataNet shared];
     self.dataNet.delegate = self;
     self.allDataArray = [NSMutableArray arrayWithCapacity:0];
     self.currentQueenElementArray = [NSMutableArray arrayWithCapacity:0];
@@ -39,6 +39,9 @@
         dataArray = [NSMutableArray arrayWithArray:[ws dataLoor:dataArray]];
         BOOL init = YES;
         _allDataArray.count == 0 ? (init = YES) :(init = NO);
+        if (dataArray !=nil && dataArray.count>0) {
+            [self findRecordModel];
+        }
         _allDataArray = dataArray;
         
         if (_allDataArray.count<Control_Get_DefaultShowCandleNum+10) {
@@ -62,7 +65,49 @@
 }
 - (void)dataNetWithBehindData:(NSMutableArray *)dataArray
 {
-    
+    if (dataArray.count==0) {
+        if (_allDataArray.count<=Control_Get_DefaultShowCandleNum/4*3) {
+            [self dataComplete];
+        }
+        return;
+    }
+    BOOL init = YES;
+    if (_allDataArray.count>Control_Get_DefaultShowCandleNum+10) {
+        init = NO;
+    }
+    dataArray = [NSMutableArray arrayWithArray:[self dataLoor:dataArray]];
+    if (dataArray.count>0) {
+        [self findRecordModel];
+        NSDateFormatter * _formatter = [SPDateManager sharedInstance].dateFormatter;
+        [_formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+        SKLine_DataModel * dataModel = dataArray[0];
+        NSDate * newDate = [_formatter dateFromString:dataModel.timeStamp];
+        if (_allDataArray.count<=0) {
+            [_allDataArray insertObjects:dataArray atIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, dataArray.count)]];
+        }else{
+            for (int i=0; i<_allDataArray.count; i++) {
+                SKLine_DataModel * oldDataModel = _allDataArray[i];
+                NSDate * oldDate = [_formatter dateFromString:oldDataModel.timeStamp];
+                if ([newDate timeIntervalSinceDate:oldDate]<=0) {
+                    [_allDataArray insertObjects:dataArray atIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(i, dataArray.count)]];
+                    break;
+                }
+            }
+        }
+        if (init) {
+            [self dataComplete];
+        }
+        
+        if (self.currentIndex+Control_Get_DefaultShowCandleNum>_allDataArray.count||_allDataArray.count<Control_Get_DefaultShowCandleNum/4*3) {
+            [self dataComplete];
+            
+            if (_allDataArray.count<Control_Get_DefaultShowCandleNum+10) {
+                [self getKLineBeforeDataSelector];
+            }
+        }else{
+            self.currentIndex += dataArray.count;
+        }
+    }
 }
 - (void)onlyMove{
     [self calculatePointWithCandleArray:self.currentQueenElementArray];
@@ -124,6 +169,12 @@
                 break;
             }
         }
+    }
+}
+- (void)findRecordModel
+{
+    if (_allDataArray!=nil && _allDataArray.count>self.currentIndex&&self.currentIndex>=0) {
+        _recordDataModel = _allDataArray[self.currentIndex];
     }
 }
 - (void)calculatePointWithCandleArray:(NSMutableArray *)candleArray

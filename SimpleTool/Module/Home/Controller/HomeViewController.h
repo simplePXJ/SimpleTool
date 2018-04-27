@@ -10,6 +10,5 @@
 
 @interface HomeViewController : UIViewController
 
-- (void)setAdArray:(NSArray *)array;
 
 @end

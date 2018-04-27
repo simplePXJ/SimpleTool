@@ -30,14 +30,26 @@
 #pragma mark - iniUI
 - (void)initUI{
     WS(ws);
-    NavView * navView = [[NavView alloc] init];
-    [navView setTitle:@"Home"];
-    [self.view addSubview:navView];
+    [self setTitle:@"Home"];
+//    NavView * navView = [[NavView alloc] initWithSupView:self.view];
+//    [self.view addSubview:navView];
+//    [navView loadUI];
+//    [navView setTitle:@"Home"];
+    
     
     self.view.backgroundColor = KColor.backGround;
-    AdScrollView * adScrollView = [[AdScrollView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(navView.frame)+5, KScreenWidth, 25)];
+    AdScrollView * adScrollView = [[AdScrollView alloc] initWithFrame:CGRectMake(0, KNavHeight+5, KScreenWidth, 25)];
+    adScrollView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:adScrollView];
+    
     [adScrollView setAdArray:@[@"0",@"1",@"2",@"3",@"4",@"5"]];
+    
+    [adScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(@(self.navigationController.navigationBar.frame.size.height));
+        make.right.equalTo(ws.view.mas_right);
+        make.top.equalTo(@(KNavHeight));
+        make.height.equalTo(@25);
+    }];
     
     UIButton * goKlineBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.view addSubview:goKlineBtn];
@@ -55,11 +67,17 @@
 #pragma mark - Click FUNC
 - (void)goKlinePage
 {
-    WS(ws);
     SKLineViewController * skLinePage = [[SKLineViewController alloc] init];
-    [self presentViewController:skLinePage animated:YES completion:^{
-        ws.tabBarController.tabBar.hidden = YES;
-    }];
+    [self.navigationController pushViewController:skLinePage animated:YES];
+}
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
+    
+    if (fromInterfaceOrientation == UIInterfaceOrientationLandscapeLeft || fromInterfaceOrientation ==UIInterfaceOrientationLandscapeRight) {
+        
+    }else{
+        
+    }
+
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

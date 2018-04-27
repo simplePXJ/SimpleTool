@@ -27,6 +27,7 @@
 -(void)getKlineBehindData{
     WS(ws);
     self.currentDate = [self getBehindDate];
+    NSLog(@"getKlineBehindData_________%d",(int)self.currentDate);
     [self getKLineDataWithDate:_currentDate complete:^(BOOL Success, NSMutableArray *dataArray) {
         if(!Success&&_recordFailCount<=8){
             _recordFailCount++;
@@ -48,12 +49,13 @@
                 complete:(void(^)(BOOL Success, NSMutableArray *dataArray))complete;
 {
    
-    NSString *instrumentCode = @"";
+    NSString *instrumentCode = @"HSI1712";
     NSString *requestDate = [self dealRequestDateWithDate:date];
     NSString *kLinefileName = [NSString stringWithFormat:@"%@_%@_1.k",instrumentCode,requestDate];
     NSString * URL              = [NSString stringWithFormat:@"%@/futuresquota/%@/%@",K_DOMAIN_FILE,instrumentCode,kLinefileName];
+    NSLog(@"%@",URL);
     [NetRequest getRequestWithURL:URL complete:^(NSString *str) {
-        
+        NSLog(@"currentIndex%d",(int)_currentDate);
         if (str.length < 2) {
             complete(NO,nil);
             return ;
@@ -62,6 +64,7 @@
             str = [str stringByReplacingOccurrencesOfString:@"}," withString:@"}"];
             NSMutableArray     *tmpArray = [NSMutableArray arrayWithArray:[str componentsSeparatedByString:@"}"]];
             if (tmpArray.count > 0) {
+                _recordFailCount = 0;
                 complete(YES,tmpArray);
             }
             else{

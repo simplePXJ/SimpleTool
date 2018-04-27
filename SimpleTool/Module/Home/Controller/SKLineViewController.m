@@ -12,9 +12,16 @@
 @interface SKLineViewController ()
 
 @property (nonatomic,strong)NavView * navView;
+@property (nonatomic,strong)SKLine_ChartView * chartView;
 @end
 
 @implementation SKLineViewController
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.tabBarController.tabBar.hidden = YES;
+    [self loadChartViewFrame];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,30 +37,52 @@
 
 #pragma mark - initUI
 - (void)initNav{
-    _navView = [[NavView alloc] init];
-    [_navView setTitle:@"Home"];
-    [self.view addSubview:_navView];
+//    _navView = [[NavView alloc] initWithSupView:self.view];
+//    [self.view addSubview:_navView];
+//    [_navView loadUI];
+//    [_navView setTitle:@"Home"];
+//    [_navView.rightControl addTarget:self action:@selector(close) forControlEvents:UIControlEventTouchUpInside];
+//    [_navView.rightControl setTitle:@"close" forState:UIControlStateNormal];
     
-    [_navView.rightControl addTarget:self action:@selector(close) forControlEvents:UIControlEventTouchUpInside];
-    [_navView.rightControl setTitle:@"close" forState:UIControlStateNormal];
+    UIBarButtonItem * backItem = [[UIBarButtonItem alloc] init];
+    backItem.title = @"";
+    self.navigationItem.backBarButtonItem = backItem;
+    [self setTitle:@"SKLINE"];
 }
 
 - (void)initUI{
     WS(ws);
     self.view.backgroundColor = KColor.view_main_2;
-    SKLine_ChartView * chartView = [[SKLine_ChartView alloc] init];
-    [self.view addSubview:chartView];
+    _chartView = [[SKLine_ChartView alloc] init];
+    [self.view addSubview:_chartView];
+    [self loadChartViewFrame];
     
-    [chartView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(_navView.mas_bottom);
+    [_chartView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(@KNavHeight);
         make.left.equalTo(ws.view.mas_left);
         make.right.equalTo(ws.view.mas_right);
         make.bottom.equalTo(ws.view.mas_bottom);
     }];
-    
-
 }
-
+- (void)loadChartViewFrame{
+    WS(ws);
+    UIInterfaceOrientation interfaceOrientation = [[UIApplication sharedApplication] statusBarOrientation];
+    if (interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation ==UIInterfaceOrientationLandscapeRight) {
+        [_chartView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(@(ws.navigationController.navigationBar.frame.size.height));
+            make.left.equalTo(ws.view.mas_left);
+            make.right.equalTo(ws.view.mas_right);
+            make.bottom.equalTo(ws.view.mas_bottom);
+        }];
+    }else{
+        [_chartView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(@KNavHeight);
+            make.left.equalTo(ws.view.mas_left);
+            make.right.equalTo(ws.view.mas_right);
+            make.bottom.equalTo(ws.view.mas_bottom);
+        }];
+    }
+}
 #pragma mark - click
 - (void)close
 {
@@ -63,6 +92,10 @@
     }];
 }
 
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
+
+    [self loadChartViewFrame];
+}
 
 /*
 #pragma mark - Navigation

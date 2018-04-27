@@ -42,7 +42,6 @@
     if (self.viewControllers.count<=3) {
         HomeViewController * homeVC = [[HomeViewController alloc] init];
         UINavigationController * homeNav = [[UINavigationController alloc] initWithRootViewController:homeVC];
-        homeNav.navigationBarHidden = YES;
         
         NSMutableArray  * viewControllers = [NSMutableArray arrayWithArray:self.viewControllers];
         [viewControllers insertObject:homeNav atIndex:2];
@@ -72,15 +71,12 @@
 
     HomeViewController * homeVC = [[HomeViewController alloc] init];
     UINavigationController * homeNav = [[UINavigationController alloc] initWithRootViewController:homeVC];
-    homeNav.navigationBarHidden = YES;
     
     MessageViewController * messageVC = [[MessageViewController alloc] init];
     UINavigationController * messageNav = [[UINavigationController alloc] initWithRootViewController:messageVC];
-    messageNav.navigationBarHidden = YES;
 
     MineViewController * mineVC = [[MineViewController alloc] init];
     UINavigationController * mineNav = [[UINavigationController alloc] initWithRootViewController:mineVC];
-    mineNav.navigationBarHidden = YES;
 
     [self setViewControllers:@[homeNav,messageNav,mineNav]];
     self.tabBar.backgroundColor = [UIColor grayColor];

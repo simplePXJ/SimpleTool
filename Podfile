@@ -14,5 +14,7 @@ targetsArray.each do |t|
         pod 'UMengUShare/Social/ReducedWeChat'
         pod 'UMengUShare/Social/ReducedQQ'
         pod 'UMengUShare/Social/ReducedSina'
+        pod 'Protobuf', '~> 3.1.0'
+        pod 'SocketRocket'
     end
 end

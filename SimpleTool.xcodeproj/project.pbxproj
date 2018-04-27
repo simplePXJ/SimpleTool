@@ -23,6 +23,7 @@
 		C937447F1F8C955400F01614 /* SimpleToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C937447E1F8C955400F01614 /* SimpleToolUITests.m */; };
 		C9498DAC1FB97508009AA577 /* AdScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9498DAB1FB97508009AA577 /* AdScrollView.m */; };
 		C9498DAF1FB97B34009AA577 /* AdScrollSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9498DAE1FB97B34009AA577 /* AdScrollSubView.m */; };
+		C95FC1F31FDE60B300F0ACB5 /* SKLine_CandleDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = C95FC1F21FDE60B200F0ACB5 /* SKLine_CandleDetailView.m */; };
 		C96231BB1FD52CEC0092782D /* NetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C96231BA1FD52CEC0092782D /* NetRequest.m */; };
 		C96231BE1FD534B30092782D /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = C96231BC1FD534B30092782D /* Helper.m */; };
 		C96231C51FD53B5F0092782D /* SKLine_DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C96231C41FD53B5F0092782D /* SKLine_DataManager.m */; };
@@ -98,6 +99,8 @@
 		C9498DAB1FB97508009AA577 /* AdScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdScrollView.m; sourceTree = "<group>"; };
 		C9498DAD1FB97B34009AA577 /* AdScrollSubView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdScrollSubView.h; sourceTree = "<group>"; };
 		C9498DAE1FB97B34009AA577 /* AdScrollSubView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdScrollSubView.m; sourceTree = "<group>"; };
+		C95FC1F11FDE60B200F0ACB5 /* SKLine_CandleDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKLine_CandleDetailView.h; sourceTree = "<group>"; };
+		C95FC1F21FDE60B200F0ACB5 /* SKLine_CandleDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKLine_CandleDetailView.m; sourceTree = "<group>"; };
 		C96231B91FD52CEC0092782D /* NetRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetRequest.h; sourceTree = "<group>"; };
 		C96231BA1FD52CEC0092782D /* NetRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetRequest.m; sourceTree = "<group>"; };
 		C96231BC1FD534B30092782D /* Helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
@@ -287,6 +290,8 @@
 				C9E6282E1FD682D400A70A18 /* SKLine_ChartView.m */,
 				C9E628301FD682FC00A70A18 /* SKLine_CandleView.h */,
 				C9E628311FD682FC00A70A18 /* SKLine_CandleView.m */,
+				C95FC1F11FDE60B200F0ACB5 /* SKLine_CandleDetailView.h */,
+				C95FC1F21FDE60B200F0ACB5 /* SKLine_CandleDetailView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -652,6 +657,7 @@
 				C9357E3B1F94476C009BE840 /* MessageTableView.m in Sources */,
 				C966FD5E1FB02A03004BDA8B /* FontManager.m in Sources */,
 				C904A5521F8F136C00A878EE /* MineViewController.m in Sources */,
+				C95FC1F31FDE60B300F0ACB5 /* SKLine_CandleDetailView.m in Sources */,
 				C904A52E1F8F04B100A878EE /* MainTabBarController.m in Sources */,
 				C9E6282F1FD682D400A70A18 /* SKLine_ChartView.m in Sources */,
 				C934F9531F90B3C100275D4B /* ColorManager.m in Sources */,
@@ -822,12 +828,49 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N9D4SCWKR3;
+				DEVELOPMENT_TEAM = CHEK3X4873;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/PXJ/Desktop/SimpleTool/SimpleTool/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "/Users/PXJ/Desktop/SimpleTool/SimpleTool/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+					"-l\"AFNetworking\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"MD5Digest\"",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-l\"SocialQQ\"",
+					"-l\"SocialSina\"",
+					"-l\"SocialWeChat\"",
+					"-l\"UMSocialLog\"",
+					"-l\"sqlite3\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"UMSocialCore\"",
+					"-framework",
+					"\"UMSocialNetwork\"",
+					"-framework",
+					"\"UShareUI\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.simple.SimpleTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -843,12 +886,49 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N9D4SCWKR3;
+				DEVELOPMENT_TEAM = CHEK3X4873;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/PXJ/Desktop/SimpleTool/SimpleTool/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "/Users/PXJ/Desktop/SimpleTool/SimpleTool/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+					"-l\"AFNetworking\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"MD5Digest\"",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-l\"SocialQQ\"",
+					"-l\"SocialSina\"",
+					"-l\"SocialWeChat\"",
+					"-l\"UMSocialLog\"",
+					"-l\"sqlite3\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"UMSocialCore\"",
+					"-framework",
+					"\"UMSocialNetwork\"",
+					"-framework",
+					"\"UShareUI\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.simple.SimpleTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

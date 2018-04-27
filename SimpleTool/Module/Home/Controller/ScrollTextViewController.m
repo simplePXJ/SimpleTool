@@ -20,10 +20,10 @@
     [self initUI];
 }
 - (void)initUI{
-    NavView * navView = [[NavView alloc] init];
-    [navView setTitle:@"文字滚动条"];
+    NavView * navView = [[NavView alloc] initWithSupView:self.view];
     [self.view addSubview:navView];
-    
+    [navView setTitle:@"文字滚动条"];
+    [navView loadUI];
     self.view.backgroundColor = KColor.backGround;
     AdScrollView * adScrollView = [[AdScrollView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(navView.frame)+5, KScreenWidth, 25)];
     [self.view addSubview:adScrollView];

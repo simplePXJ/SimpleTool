@@ -33,9 +33,10 @@
     [self initUI];
 }
 - (void)initNav{
-    NavView * navView = [[NavView alloc] init];
-    [navView setTitle:@"Message"];
+    NavView * navView = [[NavView alloc] initWithSupView:self.view];
     [self.view addSubview:navView];
+    [navView setTitle:@"Message"];
+    [navView loadUI];
     
 }
 #pragma mark - ------------UI界面初始化-------------

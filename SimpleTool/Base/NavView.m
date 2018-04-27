@@ -19,29 +19,35 @@
     // Drawing code
 }
 */
-- (id)init
-{
-    self = [super init];
-    if (self) {
-        self.frame = CGRectMake(0, 0, KScreenWidth, KNavBarHeight);
-        [self initUI];
-    }
-    return self;
-}
-- (id)initWithFrame:(CGRect)frame;
+
+- (id)initWithSupView:(UIView*)supView
 {
     
-    self = [super initWithFrame:frame];
+    self = [super init];
     if (self) {
-        [self initUI];
+        self.SPSuperView = supView;
     }
     return self;
 }
-
+- (void)loadUI;
+{
+    [self initUI];
+}
 - (void)initUI
 {
     self.clipsToBounds = YES;
-    self.frame = CGRectMake(0, 0, KScreenWidth, KNavHeight);
+
+    WS(ws);
+    
+    [self mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(ws.SPSuperView.mas_top);
+        make.left.equalTo(ws.SPSuperView.mas_left);
+        make.right.equalTo(ws.SPSuperView.mas_right);
+        make.height.equalTo(@(KNavHeight));
+    }];
+    
+    
+//    self.frame = CGRectMake(0, 0, KScreenWidth, KNavHeight);
     self.backgroundColor = KColor.navBarBack;
     self.titleLab   = [[UILabel alloc] initWithFrame:CGRectMake(50, KStatusBarHeight, KScreenWidth-100, KNavBarHeight)];
     self.titleLab.textColor = KColor.navTitleText;
